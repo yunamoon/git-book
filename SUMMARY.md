@@ -13,8 +13,18 @@
 
 ## YUNA🌕 데브노트
 
-* [1주차 개발 환경](yuna-1/1.md)
+* [1주차 개발 환경](yuna-1/1/README.md)
+  * [Node.js](yuna-1/1/node.js.md)
+  * [NPM(Node Package Manager)](yuna-1/1/npm-node-package-manager.md)
+  * [ES Modules vs CommonJS](yuna-1/1/es-modules-vs-commonjs.md)
 * [1주차 TypeScript](yuna-1/1-typescript.md)
 * [1주차 React](yuna-1/1-react.md)
 * [1주차 Testing Library](yuna-1/1-testing-library.md)
 * [1주차 Parcel & ESLint](yuna-1/1-parcel-and-eslint.md)
+
+## YUNA🌕 개인공부
+
+* [HTML/CSS](yuna-2/html-css.md)
+* [JavaScript](yuna-2/javascript/README.md)
+  * [모던 자바 스크립트 Deep Dive](yuna-2/javascript/deep-dive.md)
+* [CS](yuna-2/cs.md)
