@@ -14,6 +14,10 @@
 ## YUNA🌕 데브노트
 
 * [1주차 개발 환경](yuna-1/1/README.md)
+  * [JavaScript 개발 환경 (Node.js) 세팅](yuna-1/1/javascript-node.js.md)
+  * [TypeScript + React + Jest + Parcel 개발 환경](yuna-1/1/typescript-+-react-+-jest-+-parcel.md)
+  * [TypeScript + React + Jest + Parcel 개발 환경 세팅](yuna-1/1/typescript-+-react-+-jest-+-parcel-1.md)
+  * [개발 환경 테스트](yuna-1/1/undefined.md)
   * [Node.js](yuna-1/1/node.js.md)
   * [NPM(Node Package Manager)](yuna-1/1/npm-node-package-manager.md)
   * [ES Modules vs CommonJS](yuna-1/1/es-modules-vs-commonjs.md)
