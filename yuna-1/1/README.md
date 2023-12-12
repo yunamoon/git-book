@@ -10,7 +10,7 @@ JavaScript(Node.js) 개발 시 가장 어려운 것은 개발 환경 세팅이�
 * [Node.js](https://nodejs.org/en) \_최신 버전인지 확인해야 하나, 너무 최신 버전을 따라갈 필요는 없다. 적당히 상황에 맞게 유지하는 것이 중요하다. 강의 기준 최신 버전은 18.12.1 LTS고 데브노트 작성 기준 최신 버전은 20.10.0 LTS이다.
 * [fnm (Fast Node Manager)](https://github.com/Schniz/fnm) \_ Node.js 빠르고 간단하게 관리할 수 있는 CLI 도구이다.
 
-### TypeScript + React + Jest + Parcel 개발 환경 세팅
+### TypeScript + React + Jest + Parcel 개발 환경
 
 * [TypeScript ](https://www.typescriptlang.org/)\_TypeScript는 자바스크립트의 슈퍼셋인 오픈소스 프로그래밍 언어이다.
 * [React](https://ko.legacy.reactjs.org/) \_ React는 사용자 인터페이스를 구축하기 위한 자바스크립트 라이브러리이다.
@@ -19,4 +19,19 @@ JavaScript(Node.js) 개발 시 가장 어려운 것은 개발 환경 세팅이�
 * 참고자료
   * [React + TypeScript + Parcel](https://github.com/ahastudio/CodingLife/tree/main/20211008/react)
   * [Usestore-ts 세팅 예제](https://github.com/ahastudio/CodingLife/tree/main/20220726/react)
+
+### TypeScript + React + Jest + Parcel 개발 환경 세팅
+
+<pre class="language-markup"><code class="lang-markup"><strong>** 1.사전준비
+</strong><strong>// 1. 작업 폴더를 준비한다.
+</strong>mkdir my-app
+
+// 2. 생성한 폴더로 이동한다.
+cd my-app
+
+//3. Visual Studio Code를 연다.
+code. 
+or
+Vscode로 이동해서 폴더 열기
+</code></pre>
 
