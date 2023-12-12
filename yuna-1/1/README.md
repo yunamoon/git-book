@@ -45,8 +45,8 @@ npm init -y
 ```
 
 ```
-// 5. node_modules등의 용량이 큰 파일의 커밋 등을 방지하기
-위해서 .gitignore 파일을 미리 설정한다.
+/* 5. node_modules등의 용량이 큰 파일의 커밋 등을 방지하기
+위해서 .gitignore 파일을 미리 설정한다. */
 ```
 
 ```
@@ -56,8 +56,8 @@ npx tsc --init
 ```
 
 ```
-// 7. tsconfig.json 파일의 jsx 속성을 변경한다. 
-   "jsx": "react-jsx"의 주석 처리를 해제한다.
+/* 7. tsconfig.json 파일의 jsx 속성을 변경한다. 
+   "jsx": "react-jsx"의 주석 처리를 해제한다. */
 ```
 
 ```
@@ -67,8 +67,8 @@ npx eslint --init
 ```
 
 ```
-// 9. .eslintrc.js 파일을 적절히 수정해야 하며, 
-jset 설치 이전이라면 여기서 미리 jset:true를 설정하면 좋다.
+/* 9. .eslintrc.js 파일을 적절히 수정해야 하며, 
+jset 설치 이전이라면 여기서 미리 jset:true를 설정하면 좋다. */
 ```
 
 ```
@@ -89,11 +89,11 @@ jset-environment-jsdom / @testing-library/react
 ```
 
 ```
-// 13. jest.config.js 파일을 작성하여 SWC를 사용한다.
+/* 13. jest.config.js 파일을 작성하여 SWC를 사용한다.
 `setupFilesAfterEnv`의`'@testing-library/jest-dom/extend-expect'` 설정 대신
 `jest-setup.js`파일에 `import '@testing-library/jest-dom'`를 추가한다.
 
-참고 문서: https://github.com/testing-library/jest-dom#usage
+참고 문서: https://github.com/testing-library/jest-dom#usage */
 ```
 
 ```
@@ -104,3 +104,58 @@ npm i -D parcel
 ```
 // 15. package.json 파일의 Script를 적절히 수정한다.
 ```
+
+### 개발 환경 테스트
+
+```
+// 1. index.html 파일을 생성한다.
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>React Demo App</title>
+</head>
+<body>
+    // id root 엘리먼트
+    <div id="root"></div>
+    
+    // script 파일 설정
+    <script type="module" src="./src/main.tsx"></script>
+</body>
+</html>
+
+```
+
+```
+// 2. package.json 파일에서 
+//"main" : "index.js"를 
+//"source" : "index.html"로 수정한다.
+```
+
+```
+// 3.TypeScript 파일을 생성한다. 
+// 파일명 : main.tsx
+// 간단한 예제
+
+//react-domm import
+import  ReactDOM  from "react-dom/client";
+
+//App 함수 : id가 root인 엘리먼트에 return 값 랜더링.
+function App() {
+return (<p>Hello, React World! </p>)
+}
+
+//element 변수
+const element = document.getElementById('root');
+
+//element가 화면상이 있을 수도, 없을 수도 있기 때문에 조건문문
+if (element) {
+ const root =   ReactDOM.createRoot(element);
+ root.render(<App/>);
+}
+```
+
+### 테스트 결과
+
+<figure><img src="../../.gitbook/assets/TEST.png" alt=""><figcaption></figcaption></figure>
