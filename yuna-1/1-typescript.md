@@ -78,7 +78,7 @@ boy = { name: '문유나', age:28};
 ```
 // 함수 정의
 
-function add(x:number, y:number):number {
+function Add(x:number, y:number):number {
 return x+y;
 };
 
@@ -168,12 +168,12 @@ test =3;
 
 type category = 'food' | 'toy' | 'bag';
 
-function fetchProducts({category} : {category:category}){
+function FetchProducts({category} : {category:category}){
 console.log('Fetch ${category}');
 }
 
-fetchProducts({category:'food'});
-fetchProducts({category:'yuna'});
+FetchProducts({category:'food'});
+FetchProducts({category:'yuna'});
 > 타입 에러
 ```
 
@@ -190,17 +190,17 @@ targetName undefined;
 
 // 상기의 경우는 별로 없고, 
 // 함수 매개 변수에서 Optional Parameter로 처리한다.
-function greeting(name?:string):string {
+function Greeting(name?:string):string {
 return `Hello, ${name || 'world'}`;
 }
 
 // 기본값을 잡아주면 더 좋다.
-function greeting(name?:string = 'world'):string {
+function Greeting(name?:string = 'world'):string {
 return `Hello ${name}`;
 }
 
 // 매개변수고 오브젝트일 때도 활용할 수 있다.
-function greeting({name,age}:{
+function Greeting({name,age}:{
 name:string;
 age?:number;
 }):string {
@@ -213,7 +213,7 @@ name:string;
 age?:number;
 };
 
-function greeting({name,age}:human):sting {
+function Greeting({name,age}:human):sting {
 retrun age? `${name}(${age})`:name;
 };
   
