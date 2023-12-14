@@ -1,4 +1,4 @@
-# 1주차 TypeScript
+# TypeScript
 
 ### [TypeScript](https://www.typescriptlang.org/ko/)
 

@@ -1,4 +1,4 @@
-# 1주차 React
+# React
 
 ### React
 
