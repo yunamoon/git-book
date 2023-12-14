@@ -16,7 +16,7 @@ npm i -D ts-node
 npx ts-node
 ```
 
-#### 1. 타입 지정
+### 1. 타입 지정
 
 ```
 // TypeScript는 변수 선언 시 타입 지정 가능
@@ -40,7 +40,7 @@ human = {name : '문유나', age:13};
 
 ```
 
-#### 2. 타입 정의
+### 2. 타입 정의
 
 타입의 재사용을 위하여 타입을 정의하기도 한다.
 
@@ -89,7 +89,7 @@ add('유나','문')
 -> 타입에러
 ```
 
-#### 3. 고정된 값으로 타입 정의
+### 3. 고정된 값으로 타입 정의
 
 Union 타입에서 유용하게 쓰인다.
 
@@ -104,7 +104,7 @@ category = 'books';
 > 타입에러
 ```
 
-#### 4. 배열 타입
+### 4. 배열 타입
 
 ```
 // 배열 타입은 뒤에 []을 붙여준다.
@@ -113,7 +113,7 @@ let numbers : number[];
 numbers = [1,2,3];
 ```
 
-#### 5. Tuple
+### 5. Tuple
 
 배열보다 엄격하게 타입을 관리하고 싶을 경우
 
@@ -135,7 +135,7 @@ pair = [28,'yuna'];
 > 타입에러
 ```
 
-#### 6. 타입 추론
+### 6. 타입 추론
 
 타입을 지정하지 않은 경우에도 자동으로 타입을 추론하여 지정
 
@@ -145,7 +145,7 @@ name = 32;
 > 타입 에러
 ```
 
-#### 7. [Union Type](https://www.typescriptlang.org/ko/docs/handbook/typescript-in-5-minutes.html#%EC%9C%A0%EB%8B%88%EC%96%B8-unions)
+### 7. [Union Type](https://www.typescriptlang.org/ko/docs/handbook/typescript-in-5-minutes.html#%EC%9C%A0%EB%8B%88%EC%96%B8-unions)
 
 여러 타입 중 하나 일 수 있음을 지정하는 방법으로레거시 환경이나 코드 때문에 안쓰기 어렵다.
 
@@ -177,7 +177,7 @@ FetchProducts({category:'yuna'});
 > 타입 에러
 ```
 
-#### 8. [Optional Parameter](https://www.typescriptlang.org/docs/handbook/2/functions.html#optional-parameters)
+### 8. [Optional Parameter](https://www.typescriptlang.org/docs/handbook/2/functions.html#optional-parameters)
 
 함수 매개변수에서 사용된다.
 
@@ -219,7 +219,7 @@ retrun age? `${name}(${age})`:name;
   
 ```
 
-#### 9. Intersection Type
+### 9. Intersection Type
 
 * [교집합](https://www.typescriptlang.org/ko/docs/handbook/typescript-in-5-minutes-func.html#%EA%B5%90%EC%A7%91%ED%95%A9)
 * [Intersection Types](https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types)
