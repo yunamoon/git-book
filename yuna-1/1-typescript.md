@@ -145,4 +145,121 @@ name = 32;
 > 타입 에러
 ```
 
-#### Union Type
+#### 7. [Union Type](https://www.typescriptlang.org/ko/docs/handbook/typescript-in-5-minutes.html#%EC%9C%A0%EB%8B%88%EC%96%B8-unions)
+
+여러 타입 중 하나 일 수 있음을 지정하는 방법으로레거시 환경이나 코드 때문에 안쓰기 어렵다.
+
+[ReactNode](https://github.com/facebook/react/blob/main/packages/shared/ReactTypes.js)
+
+```
+// Boolean
+type bool = true | false;
+// bool은 true이거나 false.
+
+let test:bool;
+test = true;
+test = false;
+test =3;
+> 타입에러
+```
+
+```
+// 매개변수를 제한하는 경우 유용
+
+type category = 'food' | 'toy' | 'bag';
+
+function fetchProducts({category} : {category:category}){
+console.log('Fetch ${category}');
+}
+
+fetchProducts({category:'food'});
+fetchProducts({category:'yuna'});
+> 타입 에러
+```
+
+#### 8. [Optional Parameter](https://www.typescriptlang.org/docs/handbook/2/functions.html#optional-parameters)
+
+함수 매개변수에서 사용된다.
+
+```
+// undefined가 필요한 경우
+
+let targetName : string | undefined;
+targetName = '문유나';
+targetName undefined;
+
+// 상기의 경우는 별로 없고, 
+// 함수 매개 변수에서 Optional Parameter로 처리한다.
+function greeting(name?:string):string {
+return `Hello, ${name || 'world'}`;
+}
+
+// 기본값을 잡아주면 더 좋다.
+function greeting(name?:string = 'world'):string {
+return `Hello ${name}`;
+}
+
+// 매개변수고 오브젝트일 때도 활용할 수 있다.
+function greeting({name,age}:{
+name:string;
+age?:number;
+}):string {
+retrun age? `${name}(${age})`:name;
+}
+
+//오브젝트르 별도 타입 지정 가능
+type human = { 
+name:string;
+age?:number;
+};
+
+function greeting({name,age}:human):sting {
+retrun age? `${name}(${age})`:name;
+};
+  
+```
+
+#### 9. Intersection Type
+
+* [교집합](https://www.typescriptlang.org/ko/docs/handbook/typescript-in-5-minutes-func.html#%EA%B5%90%EC%A7%91%ED%95%A9)
+* [Intersection Types](https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types)
+
+```
+// 타입을 확장하는 가장 간단한 방법.
+
+type human = {
+name : string;
+age : number;
+};
+
+type creature = {
+hp : number;
+mp : number;
+}
+
+type person = human & creature;
+
+let person : person;
+person = {name:'문유나', age:28, hp:100, mp:100};
+```
+
+### 10. Generics
+
+* [Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)
+
+### 11. Utility Types
+
+* [Utility Types](https://www.typescriptlang.org/docs/handbook/utility-types.html)
+
+### 12. Tips
+
+* [Tips](https://velog.io/@lky5697/11-tips-that-help-you-become-a-better-typescript-programmer)
+
+### 13. TypeScript의 큰 장점
+
+1. Visual Studio Code 자동 완성과실시간 오류 검사가 가능하다.
+2. 오래된 라이브러리의 경우 d.ts 파일만 따로 패키지 제공을 하니 확인 후 설치한다. 형태는 @types/\~\~\~이다.
+
+* [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)
+* [DefinitelyTyped/types](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types)
+* [DefinitelyTyped/types/react](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react)
