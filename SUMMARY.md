@@ -13,21 +13,10 @@
 
 ## YUNA🌕 1주차 데브노트
 
-* [1주차 개발 환경](yuna-1/1/README.md)
-  * [JavaScript 개발 환경 (Node.js) 세팅](yuna-1/1/javascript-node.js.md)
-  * [TypeScript + React + Jest + Parcel 개발 환경](yuna-1/1/typescript-+-react-+-jest-+-parcel.md)
-* [1주차 TypeScript](yuna-1/1-typescript.md)
-* [1주차 React](yuna-1/1-react.md)
-* [1주차 Testing Library](yuna-1/1-testing-library.md)
-* [1주차 Parcel & ESLint](yuna-1/1-parcel-and-eslint.md)
-
-## YUNA🌕2주차 데브노트
-
-* [Page 1](yuna-2/page-1.md)
-
-## YUNA🌕 개인공부
-
-* [HTML/CSS](yuna-2/html-css.md)
-* [JavaScript](yuna-2/javascript/README.md)
-  * [모던 자바 스크립트 Deep Dive](yuna-2/javascript/deep-dive.md)
-* [CS](yuna-2/cs.md)
+* [개발 환경](yuna-1/undefined/README.md)
+  * [JavaScript 개발 환경 (Node.js) 세팅](yuna-1/undefined/javascript-node.js.md)
+  * [TypeScript + React + Jest + Parcel 개발 환경](yuna-1/undefined/typescript-+-react-+-jest-+-parcel.md)
+* [TypeScript](yuna-1/typescript.md)
+* [React](yuna-1/react.md)
+* [Testing Library](yuna-1/testing-library.md)
+* [Parcel & ESLint](yuna-1/parcel-and-eslint.md)
