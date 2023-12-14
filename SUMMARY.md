@@ -11,7 +11,7 @@
   * [Github 연동](yuna/readme/github.md)
   * [PR ](yuna/readme/pr.md)
 
-## YUNA🌕 데브노트
+## YUNA🌕 1주차 데브노트
 
 * [1주차 개발 환경](yuna-1/1/README.md)
   * [JavaScript 개발 환경 (Node.js) 세팅](yuna-1/1/javascript-node.js.md)
@@ -25,9 +25,13 @@
 * [1주차 Testing Library](yuna-1/1-testing-library.md)
 * [1주차 Parcel & ESLint](yuna-1/1-parcel-and-eslint.md)
 
+## YUNA🌕2주차 데브노트
+
+* [Page 1](yuna-2/page-1.md)
+
 ## YUNA🌕 개인공부
 
-* [HTML/CSS](yuna-2/html-css.md)
-* [JavaScript](yuna-2/javascript/README.md)
-  * [모던 자바 스크립트 Deep Dive](yuna-2/javascript/deep-dive.md)
-* [CS](yuna-2/cs.md)
+* [HTML/CSS](yuna-3/html-css.md)
+* [JavaScript](yuna-3/javascript/README.md)
+  * [모던 자바 스크립트 Deep Dive](yuna-3/javascript/deep-dive.md)
+* [CS](yuna-3/cs.md)
