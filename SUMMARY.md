@@ -50,7 +50,7 @@
   * [React.createElement](yuna-2/jsx/react.createelement.md)
   * [React Element](yuna-2/jsx/react-element.md)
   * [React StrictMode](yuna-2/jsx/react-strictmode.md)
-* [VDOM(Virtual DOM)이란?](yuna-2/vdom-virtual-dom/README.md)
+* [VDOM(Virtual DOM)](yuna-2/vdom-virtual-dom/README.md)
   * [DOM이란?](yuna-2/vdom-virtual-dom/dom.md)
   * [DOM과 Virtual DOM의 차이](yuna-2/vdom-virtual-dom/dom-virtual-dom.md)
 * [Reconciliation(재조정) 과정은 무엇인가?](yuna-2/reconciliation.md)
