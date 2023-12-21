@@ -14,7 +14,7 @@ Node.js에선 이미 CommonJS와 같은 모듈 시스템이 존재하고 있었�
 
 ES Module은 JavaScript의 공식 모듈 시스템으로, import와 export를 사용해 분리된 JavaScript 파일끼리 서로 접근이 가능하게 합니다. 기본적으로 내보내기는 export와 default를 사용하고, 가져오기는 import를 사용합니다.
 
-```
+```javascript
 // export 내보내기
 // test.js
 
@@ -30,7 +30,7 @@ const example2 = function (num) {
 export {example2}
 ```
 
-```
+```actionscript
 // 사용하려는 객체만 선택해서 가지고 오기
 
 import { example} from './test';
@@ -43,7 +43,7 @@ obj.example(10);
 obj.example2(10);
 ```
 
-```
+```javascript
 // export default를 이용하여 내보내기
 // test.js
 
@@ -61,7 +61,7 @@ example2 : function(num) {
 export default obj
 ```
 
-```
+```javascript
 // default 키워드를 이용하여 내보낼 때 사용한 명칭을 기대로 쓸 필요는 없다.
 
 import testObj from './test'
@@ -98,7 +98,7 @@ entry 파일부터 inport 문을 찾아가며 필요한 모든 파일을 모듈 
 
 CommonJs는 자바스크립트의 모듈화를 위한 프로젝트 중 하나로,  내보내기의r경우 exports와  module.exports를 사용하고 가져오기의 경우에는 require()을 사용합니다.
 
-```
+```javascript
 // exports를 통한 내보내기
 //test.js
 function example(param) {
@@ -108,7 +108,7 @@ function example(param) {
 exports.example = example;
 ```
 
-```
+```javascript
 // require을 이용한 가져오기
 
 const obj = require('./test');
@@ -116,7 +116,7 @@ const obj = require('./test');
 obj.example(10);
 ```
 
-```
+```javascript
 // module.exports를 통한 내보내기
 // test.js
 
