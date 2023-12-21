@@ -26,15 +26,13 @@ const element = <h1>Hello, world!</h1>
 JSX의 형식으로 작성한 코드는 브라우저에서 실행되기 전에 번들링 과정에서 바벨을 사용하여 일반 자바스크립트 코드로 변환된다.
 
 ```javascript
-// 일반 JS
-
 function App() {
 return (
 <div>Hello<b>react</b></div>
 ):
 }
 
-// 변환 후 JSX
+//변환 
 function App() {
 return React.createElement("div", null, "Hello", 
 React.createElement("b",null,"react")):
