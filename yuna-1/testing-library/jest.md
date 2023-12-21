@@ -17,5 +17,76 @@ Jest는 거의 모든 기능을 갖춘 테스팅 도구이며 Mocha와 Chai처�
 ### Jest 설치하기
 
 ```
+// 개발자 도구이기 때문에 -D를 붙여 설치한다.
 npm install -D jest
 ```
+
+### Jest 사용하기
+
+````
+// package.json을 설정합니다.
+
+```json
+"scripts": {
+    "start": "parcel --port 8081",
+    "build": "parcel build",
+    "check": "tsc --noEmit",
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
+    "test": "jest",
+    "coverage": "jest --coverage --coverage-reporters html",
+    "watch:test": "jest --watchAll"
+  },
+```
+````
+
+### Jest Test 실행하기
+
+```
+// npm 명령어를 사용합니다.
+npm test
+```
+
+### Jest Test Code 예시
+
+<pre><code>// example.tsx
+<strong>
+</strong><strong>export const sum = (a: number, b: number) : number => {
+</strong>    return a + b;
+}
+</code></pre>
+
+```
+// example.test.ts
+
+import {sum} from './sum';
+import {describe, expect, test} from '@jest/globals';
+
+describe('sum module', () => {
+  test('adds 1 + 2 to equal 3', () => {
+    expect(sum(1, 2)).toBe(3);
+  });
+});
+```
+
+### Jest가 Test 파일로 인식하는 경우
+
+Jest는 .test나 .spec이 포함되거나 \_\_tests\_\_ 폴더 안에 있는 파일을 감지하여 테스트를 수행한다.
+
+* 테스트를 하려고 하는파일명.test.tsx
+* 테스트를 하려고 하는 파일명.spec.tsx
+* tests 폴더 안에 있는 파일
+
+### Test
+
+```javascript
+import {sum} from './sum';
+import {describe, expect, test} from '@jest/globals';
+
+describe('sum module', () => {
+  test('adds 1 + 2 to equal 3', () => {
+    expect(sum(1, 2)).toBe(3);
+  });
+});
+```
+
+### &#x20;파일의 구조
