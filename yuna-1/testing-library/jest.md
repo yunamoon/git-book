@@ -70,23 +70,30 @@ describe('sum module', () => {
 
 ### Jest가 Test 파일로 인식하는 경우
 
-Jest는 .test나 .spec이 포함되거나 \_\_tests\_\_ 폴더 안에 있는 파일을 감지하여 테스트를 수행한다.
+Jest는 .test나 .spec이 포함되거나 \_\_tests\_\_ 폴더 안에 있는 파일을 감지하여 테스트를 수행합니다.
 
 * 테스트를 하려고 하는파일명.test.tsx
 * 테스트를 하려고 하는 파일명.spec.tsx
 * tests 폴더 안에 있는 파일
 
-### Test
+### Test 파일의 구조
 
-```javascript
-import {sum} from './sum';
-import {describe, expect, test} from '@jest/globals';
+#### describe
 
-describe('sum module', () => {
-  test('adds 1 + 2 to equal 3', () => {
-    expect(sum(1, 2)).toBe(3);
-  });
-});
-```
+describe(desc, func) 함수는 관련된 테스트 들을 그룹화하고 해당 그룹에 대한 설정을 제공하는데 사용됩니다. 테스트 모음 내에서는 여러개의 test 블록을 포함 할 수 있습니다.
 
-### &#x20;파일의 구조
+#### test
+
+test(content, func) 에서 테스트 케이스를 정의하는 함수입니다. test 함수는 단일 테스트 케이스를 정의하고 해당 테스트 케이스를 실행합니다. 각 테스트 케이스는 독립적으로 실행되며, expect 함수와 함께 사용하여 예상 결과를 검증합니다.
+
+#### expect
+
+expect (testing logic or something) 테스트 결과를 검증하기 위하여 사용되며, 테스트 코드 내에 expect 함수를 사용하여 특정 값을 예상하고 이를 실제로 받은 결과와 비교해 테스트를 수행한다. expect 함수는 주로 matchers와 함게 사용됩니다.
+
+#### matcher
+
+matchers (expected result) Jest에서 테스트 결과를 검증하기 위해 사용되는 함수들로, expect 함수와 함께 expect 함수로 얻은 값에 대해 예상 결과와의 일치 여부를 확인하는데 사용됩니다.
+
+toBe, toEqual, toMatch, toBeDefined 등의 많은 Matcher 함수들이 제공됩니다.
+
+[참고 문서](https://github.com/testing-library/jest-dom#with-typescript)
