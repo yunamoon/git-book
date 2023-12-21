@@ -18,7 +18,7 @@ npx ts-node
 
 ### 1. 타입 지정
 
-```
+```javascript
 // TypeScript는 변수 선언 시 타입 지정 가능
 
 // string 타입
@@ -47,7 +47,7 @@ human = {name : '문유나', age:13};
 * [타입 정의하기 ](https://www.typescriptlang.org/ko/docs/handbook/typescript-in-5-minutes.html#%ED%83%80%EC%9E%85-%EC%A0%95%EC%9D%98%ED%95%98%EA%B8%B0-defining-types)
 * [타입 별칭과 인터페이스의 차이](https://www.typescriptlang.org/ko/docs/handbook/2/everyday-types.html#%ED%83%80%EC%9E%85-%EB%B3%84%EC%B9%AD%EA%B3%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90)
 
-```
+```javascript
 //  타입 정의
 let human : {
 name : string;
@@ -62,7 +62,7 @@ let boy : human;
 boy = {name: '문유나', age:28};
 ```
 
-```
+```javascript
 // interface 정의
 
 interface Person {
@@ -75,7 +75,7 @@ boy = { name: '문유나', age:28};
 
 ```
 
-```
+```javascript
 // 함수 정의
 
 function Add(x:number, y:number):number {
@@ -93,7 +93,7 @@ add('유나','문')
 
 Union 타입에서 유용하게 쓰인다.
 
-```
+```javascript
 // 고정된 값을 갖는 타입
 
 let category: 'food';
@@ -106,7 +106,7 @@ category = 'books';
 
 ### 4. 배열 타입
 
-```
+```javascript
 // 배열 타입은 뒤에 []을 붙여준다.
 
 let numbers : number[];
@@ -117,7 +117,7 @@ numbers = [1,2,3];
 
 배열보다 엄격하게 타입을 관리하고 싶을 경우
 
-```
+```javascript
 // number
 let numbers : number[];
 numbers = [1,3,4,6,7,8];
@@ -139,7 +139,7 @@ pair = [28,'yuna'];
 
 타입을 지정하지 않은 경우에도 자동으로 타입을 추론하여 지정
 
-```
+```javascript
 const name = '문유나';
 name = 32;
 > 타입 에러
@@ -151,7 +151,7 @@ name = 32;
 
 [ReactNode](https://github.com/facebook/react/blob/main/packages/shared/ReactTypes.js)
 
-```
+```typescript
 // Boolean
 type bool = true | false;
 // bool은 true이거나 false.
@@ -163,7 +163,7 @@ test =3;
 > 타입에러
 ```
 
-```
+```typescript
 // 매개변수를 제한하는 경우 유용
 
 type category = 'food' | 'toy' | 'bag';
@@ -181,7 +181,7 @@ FetchProducts({category:'yuna'});
 
 함수 매개변수에서 사용된다.
 
-```
+```typescript
 // undefined가 필요한 경우
 
 let targetName : string | undefined;
@@ -224,7 +224,7 @@ retrun age? `${name}(${age})`:name;
 * [교집합](https://www.typescriptlang.org/ko/docs/handbook/typescript-in-5-minutes-func.html#%EA%B5%90%EC%A7%91%ED%95%A9)
 * [Intersection Types](https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types)
 
-```
+```typescript
 // 타입을 확장하는 가장 간단한 방법.
 
 type human = {
