@@ -13,6 +13,7 @@
 
 ## YUNA🌕 1주차 데브노트
 
+* [VSCode 기본 세팅](yuna-1/vscode.md)
 * [개발 환경](yuna-1/undefined.md)
 * [Node.js](yuna-1/node.js.md)
 * [NPM (Node Package Manager)](yuna-1/npm-node-package-manager/README.md)
