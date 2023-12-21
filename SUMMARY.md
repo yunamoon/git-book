@@ -19,7 +19,7 @@
   * [Package.json / Package-lock.json](yuna-1/npm-node-package-manager/package.json-package-lock.json.md)
   * [node\_modules](yuna-1/npm-node-package-manager/node\_modules.md)
   * [npx](yuna-1/npm-node-package-manager/npx.md)
-* [ES Moules vs CommonJS](yuna-1/es-moules-vs-commonjs.md)
+* [ES Modules vs CommonJS](yuna-1/es-modules-vs-commonjs.md)
 * [REPL](yuna-1/repl.md)
 * [TypeScript](yuna-1/typescript/README.md)
   * [Interface vs Type](yuna-1/typescript/interface-vs-type.md)

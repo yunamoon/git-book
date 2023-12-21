@@ -1,2 +1,0 @@
-# ES Moules vs CommonJS
-
