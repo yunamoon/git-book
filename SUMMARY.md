@@ -41,3 +41,16 @@
   * [Parcel](yuna-1/bundler/parcel.md)
 * [Lint (린트)](yuna-1/lint/README.md)
   * [ESLint](yuna-1/lint/eslint.md)
+
+## YUNA🌕 2주차 데브노트
+
+* [JSX](yuna-2/jsx/README.md)
+  * [React에서 JSX를 사용하는 목적](yuna-2/jsx/react-jsx.md)
+  * [Syntactic sugar](yuna-2/jsx/syntactic-sugar.md)
+  * [React.createElement](yuna-2/jsx/react.createelement.md)
+  * [React Element](yuna-2/jsx/react-element.md)
+  * [React StrictMode](yuna-2/jsx/react-strictmode.md)
+* [VDOM(Virtual DOM)이란?](yuna-2/vdom-virtual-dom/README.md)
+  * [DOM이란?](yuna-2/vdom-virtual-dom/dom.md)
+  * [DOM과 Virtual DOM의 차이](yuna-2/vdom-virtual-dom/dom-virtual-dom.md)
+* [Reconciliation(재조정) 과정은 무엇인가?](yuna-2/reconciliation.md)
