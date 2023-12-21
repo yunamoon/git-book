@@ -23,7 +23,7 @@ npm install -D jest
 
 ### Jest 사용하기
 
-````
+````json
 // package.json을 설정합니다.
 
 ```json
@@ -48,14 +48,14 @@ npm test
 
 ### Jest Test Code 예시
 
-<pre><code>// example.tsx
+<pre class="language-javascript"><code class="lang-javascript">// example.tsx
 <strong>
 </strong><strong>export const sum = (a: number, b: number) : number => {
 </strong>    return a + b;
 }
 </code></pre>
 
-```
+```javascript
 // example.test.ts
 
 import {sum} from './sum';

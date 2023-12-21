@@ -107,7 +107,7 @@ npm i -D parcel
 
 ### 개발 환경 테스트
 
-```
+```html
 // 1. index.html 파일을 생성한다.
 
 <!DOCTYPE html>
@@ -133,7 +133,7 @@ npm i -D parcel
 //"source" : "index.html"로 수정한다.
 ```
 
-```
+```javascript
 // 3.TypeScript 파일을 생성한다. 
 // 파일명 : main.tsx
 // 간단한 예제
