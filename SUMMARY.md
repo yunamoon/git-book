@@ -52,5 +52,11 @@
   * [React StrictMode](yuna-2/jsx/react-strictmode.md)
 * [VDOM(Virtual DOM)](yuna-2/vdom-virtual-dom/README.md)
   * [DOM이란?](yuna-2/vdom-virtual-dom/dom.md)
-  * [DOM vs Virtual DOM](yuna-2/vdom-virtual-dom/dom-virtual-dom.md)
+  * [DOM vs Virtual DOM](yuna-2/vdom-virtual-dom/dom-vs-virtual-dom.md)
 * [Reconciliation(재조정)](yuna-2/reconciliation.md)
+
+## YUNA🌕 3주차 데브노트
+
+* [Thingking in React](yuna-3/thingking-in-react.md)
+* [React Component](yuna-3/react-component.md)
+* [React state](yuna-3/react-state.md)
