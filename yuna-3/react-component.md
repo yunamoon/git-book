@@ -18,4 +18,274 @@ React는 컴포넌트를 기반으로 하며캡슐화 된 간단한 컴포넌트
 * 정보 구조를 활용합니다. ( JSON Schema의 영향)
 * [Atomic Design](about:blank)
 
-&#x20;
+
+
+### Props
+
+* [Passing Props to a Component](https://react.dev/learn/passing-props-to-a-component)
+* [Components와 Props](https://ko.legacy.reactjs.org/docs/components-and-props.html)
+
+```typescript
+// props
+
+function test(props: {props:string}) {
+const products = props.products;
+=> const {products} = props;
+...}
+
+=> function test ({products} : {products:Product[]}) {
+...
+}
+```
+
+### [Extract Function](https://refactoring.com/catalog/extractFunction.html)
+
+우선 코드 초안을 작성하고, 별도 분리가 가능한 코드를 함수로 분리해내는 과정을 의미합니다.
+
+````typescript
+// 분리전
+import './App.css';
+
+const products =  
+[
+  { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
+  { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
+  { category: "Fruits", price: "$2", stocked: false, name: "Passionfruit" },
+  { category: "Vegetables", price: "$2", stocked: true, name: "Spinach" },
+  { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
+  { category: "Vegetables", price: "$1", stocked: true, name: "Peas" }
+]
+
+function App() {
+
+  const categories = products.reduce((acc:String[], product) => (
+  acc.includes(product.category) ? acc : [...acc, product.category]
+),[] as String[]);
+
+  return (
+    <div className="App">
+      <div className="filterable-product-table">
+        <div className="search-bar">
+          <div>
+            <input type="text" placeholder="search..."></input>
+          </div>
+          <div>
+            <input type="checkbox" id="only-stock"></input>
+            <label htmlFor="only-stock">Only show produts in stock</label>
+          </div>
+        </div>
+        <table className="product-table">
+          <thead>
+            <tr>
+             <th>Name</th>
+             <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th colSpan={2}>
+                {categories[0]}
+              </th>
+            </tr>
+            {products.filter((product)=> product.category === categories[0]).map((product) =>(
+              <tr key={product.name}>
+                <td>{product.name}</td>
+                <td>{product.price}</td>
+              </tr>
+            ))}
+            <tr>
+              <th colSpan={2}>
+                {categories[1]}
+              </th>
+            </tr>
+            {products.filter((product)=> product.category === categories[1]).map((product) =>(
+              <tr key={product.name}>
+                <td>{product.name}</td>
+                <td>{product.price}</td>
+              </tr>
+            ))}
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+```
+````
+
+````typescript
+// FilterableProductTable
+
+import Product from "../types/Product";
+import ProductTable from "./ProductTable";
+import SearchBar from "./SearcBar";
+
+type FilterableProductTableProps = {
+    products : Product[];
+}
+export default function FilterableProductTable({products} :FilterableProductTableProps) {
+    return (
+        <div>
+       <SearchBar/>
+      <ProductTable products={products}/>
+      </div>
+    )
+}
+```
+````
+
+````typescript
+//CategoryRow
+
+export default function CategoryRow({category} : {
+    category:string
+  }) {
+    return (
+      <tr>
+        <th colSpan={2}>
+          {category}
+        </th>
+      </tr>
+    )
+  }
+  
+```
+````
+
+````typescript
+//ProductRow
+
+import Product from "../types/Product";
+
+type  ProductRowProps = {
+    product : Product;
+}
+ export default function ProductRow({product} : ProductRowProps) {
+    return (
+      <tr> 
+      <td >{product.name}</td>
+      <td >{product.price}</td>
+      </tr>)
+  }
+  
+```
+````
+
+````typescript
+// ProductsInCategory
+
+import Product from "../types/Product";
+import selectProducts from "../utils/selectProducts";
+import CategoryRow from "./ProductCategoryRow";
+import ProductRow from "./ProductRow";
+
+type ProductsInCategoryProps  = {
+  category: string;
+  products : Product[];
+}
+
+
+export default function ProductsInCategory({
+  category, products
+}: ProductsInCategoryProps) {
+  const productsInCategory =selectProducts(products, category);
+  return (
+    <>
+    <CategoryRow category={category}/>
+    {productsInCategory.map((product) =>(
+    <ProductRow key={product.name} product={product}/>
+   ))}
+   </>
+  )
+}
+```
+````
+
+````typescript
+// ProductTable
+
+import Product from "../types/Product";
+import ProductsInCategory from "./ProductsInCategory";
+
+type ProductTableProps = {
+    products:Product[];
+}
+export default function ProductTable({products} : ProductTableProps) {
+    const categories = products.reduce((acc:string[], product:Product) => (
+      acc.includes(product.category) ? acc : [...acc, product.category]
+    ),[] );
+  
+    return(
+      <table className="product-table">
+      <thead>
+        <tr>
+         <th>Name</th>
+         <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        {categories.map((category) => (
+        <ProductsInCategory 
+        key={category}
+        category={category} 
+        products={products}/>
+      ))}
+      </tbody>
+    </table>
+    )
+  }
+```
+````
+
+````typescript
+// SearchBar
+
+export default function SearchBar() {
+
+    return (
+        <div className="search-bar">
+        <div>
+          <input type="text" placeholder="search..."></input>
+        </div>
+        <div>
+          <input type="checkbox" id="only-stock"></input>
+          <label htmlFor="only-stock">Only show produts in stock</label>
+        </div>
+      </div>
+    )
+}
+```
+````
+
+````typescript
+// type.ts
+
+interface Product {
+    category: string; 
+    price: string;
+     stocked: boolean;
+      name: string;
+   
+  }
+
+  export default Product;
+```
+````
+
+````typescript
+// selectProducts
+
+import Product from "../types/Product"
+
+export default function selectProducts(
+    items : Product[],
+    category : string,
+): Product[]{
+   return items.filter((item) => item.category === category);
+}
+```
+````
