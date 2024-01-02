@@ -244,6 +244,16 @@ export default function ProductTable({products} : ProductTableProps) {
 ````typescript
 // SearchBar
 
+function CheckBoxField({label} : 
+{label:string;
+}) { 
+
+    const id = `checkbox-${label}`.replace(/ /g, '-').toLowerCase();    
+    return (  <div>
+    <input type="checkbox" id={id}></input>
+    <label htmlFor={id}>{label}</label>
+  </div>)
+}
 export default function SearchBar() {
 
     return (
@@ -251,10 +261,7 @@ export default function SearchBar() {
         <div>
           <input type="text" placeholder="search..."></input>
         </div>
-        <div>
-          <input type="checkbox" id="only-stock"></input>
-          <label htmlFor="only-stock">Only show produts in stock</label>
-        </div>
+         <CheckBoxField label="어쩌구 저쩌구" />
       </div>
     )
 }
