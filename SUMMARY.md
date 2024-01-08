@@ -1,15 +1,15 @@
 # Table of contents
 
-## YUNA🌕 사전과제
+## YUNA🌕Git
 
 * [Git & Github 가이드](README.md)
-  * [Git](yuna/git-and-github/git.md)
-  * [Github](yuna/git-and-github/github/README.md)
-    * [shh key](yuna/git-and-github/github/shh-key.md)
-* [Git Book 가이드](yuna/readme/README.md)
-  * [Git Book](yuna/readme/git-book.md)
-  * [Github 연동](yuna/readme/github.md)
-  * [PR ](yuna/readme/pr.md)
+  * [Git](yuna-git/git-and-github/git.md)
+  * [Github](yuna-git/git-and-github/github/README.md)
+    * [shh key](yuna-git/git-and-github/github/shh-key.md)
+* [Git Book 가이드](yuna-git/readme/README.md)
+  * [Git Book](yuna-git/readme/git-book.md)
+  * [Github 연동](yuna-git/readme/github.md)
+  * [PR ](yuna-git/readme/pr.md)
 
 ## YUNA🌕 1주차 데브노트
 
