@@ -63,3 +63,33 @@ print(members['문유나'])
 
 ***
 
+### if 조건문
+
+```python
+
+# 특정 조건에서 코드를 실행시킬 경우
+# if 조건식 :
+#  실행할 코드
+
+# 단순 부등호
+num = 10
+if num >= 10:
+    print('num은 10 이상입니다.')
+
+# if-in 문법 (대소문자 구분)
+list = ['문유나','문세나','문한나']
+if '문유나' in list :
+    print('문유나 학생이 있습니다')
+    
+# if-else 문법
+num = 4
+if num >= 10:
+    print('num은 10 이상입니다')
+else :
+    print('num은 10 이하입니다.')
+
+```
+
+### if 조건문 테스트 결과
+
+<figure><img src="../.gitbook/assets/파이썬 ㄷ.png" alt=""><figcaption></figcaption></figure>
