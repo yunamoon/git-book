@@ -93,3 +93,28 @@ else :
 ### if 조건문 테스트 결과
 
 <figure><img src="../.gitbook/assets/파이썬 ㄷ.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### for 반복문&#x20;
+
+```python
+
+# for 반복문
+for i in range(0,10) : 
+    print('이게 바로 반복문')
+
+# list 자료에서 하나씩 추출하고 싶을 때
+list = ['문유나' , '문세나', '문한나']
+for i in list :
+    print(i)
+    
+# for 반복문을 활용한 연산
+number = [1,2,3,4,5,6,7,8]
+for i in number : 
+    print(i*10)
+
+
+```
+
+<figure><img src="../.gitbook/assets/반복문3.png" alt=""><figcaption></figcaption></figure>
