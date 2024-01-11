@@ -118,3 +118,31 @@ for i in number :
 ```
 
 <figure><img src="../.gitbook/assets/반복문3.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### def 함수문
+
+```python
+
+# def 함수문
+def test():
+    print('함수 실행')
+    
+test()
+
+# def 함수 파라미터
+def sumTest(number) :
+    print(number+10)
+
+sumTest(5)
+
+# def 함수의 return
+def returnTest(number) :
+    return number 
+returnTest(3)
+```
+
+### def 함수 테스트 결과
+
+<figure><img src="../.gitbook/assets/def.png" alt=""><figcaption></figcaption></figure>
