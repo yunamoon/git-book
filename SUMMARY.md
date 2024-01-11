@@ -1,3 +1,7 @@
 # Table of contents
 
-* [Page](README.md)
+* [YUNA🌕 Algorithm](README.md)
+
+## YUNA🌕 Python
+
+* [Python 개발 환경 세팅](yuna-python/python.md)
