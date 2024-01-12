@@ -57,5 +57,18 @@
 1. commit 기록을 한 눈에 파악하고 싶을 때 사용하는 명령어
 2. git log --all --oneline
 3. git log --all --oneline --graph // log 그래프로 제공
-4.
+
+### git diff
+
+1. 바로 전 commit과 현재 코드의 차이점을 비교&#x20;
+2. 현재 파일이 최근 commint과 어떤 부분이 달라졌는지 확인 가능
+3. git diff "커밋 id" //과거 특정 commit과 현재 파일을 비교하고 싶은 경우
+
+### git difftool
+
+1. git difftool // 현재 파일과 최근 commit의 차이점을 비
+2. git difftool "커밋 id" // 현재 파일과 특정 commit의 차이점을 비교
+3. git difftool "커밋id 1" "커밋id2" // 특정 commit 2개의 차이점을 비교
+
+
 
