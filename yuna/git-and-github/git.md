@@ -70,5 +70,16 @@
 2. git difftool "커밋 id" // 현재 파일과 특정 commit의 차이점을 비교
 3. git difftool "커밋id 1" "커밋id2" // 특정 commit 2개의 차이점을 비교
 
+***
+
+### git branch
+
+1. git branch "브랜치 이름" // 브랜치 생성
+2. git switch "브랜치 이름" // 브랜치 변경
+3. git log --graph --oneline --all // 브랜치와 커밋 내용을 한눈에 보고 싶을 경우
+4. git merge "브랜치 이름" // 브랜치 합치기
+
+
+
 
 
