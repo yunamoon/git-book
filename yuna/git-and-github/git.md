@@ -79,7 +79,22 @@
 3. git log --graph --oneline --all // 브랜치와 커밋 내용을 한눈에 보고 싶을 경우
 4. git merge "브랜치 이름" // 브랜치 합치기
 
+***
 
+### git restore
 
+1. git restore "파일 이름" // 최근 commit으로 파일 상태 되돌리기
+2. git restore --source "커밋 아이디" // 특정 커밋 아이디 시점으로 파일 상태 되돌리기
+3. git restore --staged "파일 이름" // 특정 파일의 staging 취소하기
 
+### git revert
+
+1. git revert "커밋 아이디" // 특정 커밋 아이디에서 일어난 커밋 취소
+2. git revert HEAD // 최근 커밋 1개 revert
+
+### git reset
+
+1. git rest --hard  "커밋 아이디" // 특정 커밋이 생성된 시점으로 되돌리기
+2. git rest --soft "커밋 아이디" // staging area에 남아 있음
+3. git rest --mixde "커밋 아이디" // staging 이전의 상태로, git add나 git commit 가능
 
