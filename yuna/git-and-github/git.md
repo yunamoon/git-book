@@ -1,7 +1,9 @@
 # Git
 
-### [git 설치](https://gitforwindows.org/)
+### Git 설치
 
+* window의 경우 git for window 검색 후 설치
+* mac의 경우 터미널에서 brew install git&#x20;
 * 설치시 기본 에디터가 vim으로 설정 되어 있으면 VScode로 에디터 변경
 * 기본 브랜치 이름 main으로 설정
 
