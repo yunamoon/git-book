@@ -5,7 +5,7 @@
 * [Git & Github 가이드](README.md)
   * [Git](yuna/git-and-github/git.md)
   * [Github](yuna/git-and-github/github/README.md)
-    * [shh key](yuna/git-and-github/github/shh-key.md)
+    * [SSH key](yuna-git/git-and-github/github/ssh-key.md)
 * [Git Book 가이드](yuna/readme/README.md)
   * [Git Book](yuna/readme/git-book.md)
   * [Github 연동](yuna/readme/github.md)
