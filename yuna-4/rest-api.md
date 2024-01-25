@@ -29,6 +29,31 @@
 
     REST API는 일반적으로 정적 리소스를 전송하지만, 특정한 경우에는 응답에 실행 코드를 포함할 수도 있음
 
+### 3. CRUD
 
+제약 조건을 모두 만족하는 경우는 별로 없고, resource와 HTTP verb만 도입하는 수준으로 사용
+
+* /write-post가 아니라
+* /posts -> 뭔가를 함
+
+CRUD에 대해서는 HTTP method를 대입
+
+*   <mark style="color:blue;">**Read (collection : 복수)**</mark>
+
+    GET/products -> 상품 목록 확인
+*   <mark style="color:blue;">**Read (Item : 단수)**</mark>
+
+    GET/products/{id} -> 특정 상품 정보 확인
+*   <mark style="color:blue;">**Create(collection pattern 활용)**</mark>
+
+    POST/products -> 상품 추가 (JSON 함께 전달)
+*   <mark style="color:blue;">**Update(Item)**</mark>
+
+    PUT/products/{id}
+
+    PATCH/products/{id} -> 특정 상품 정보 변경 (JSON 함께 전달)
+*   <mark style="color:blue;">**Delete(Item)**</mark>
+
+    DELETE/products/{id} -> 특정 상품 삭제
 
 \
