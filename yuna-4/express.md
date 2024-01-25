@@ -73,4 +73,10 @@ app.listen(port,() => {
 
 [참고문서](https://www.npmjs.com/package/nodemon)
 
-발환 경에서 개발 중인 Node.js 애플리케이션을 자동으로 감지하고 변경 사항이 있을 때마다 애플리케이션을 다시 시작하는 도구
+개발 중인 node.js 애플리케이션을 자동으로 감지하고 변경 사항이 있을 때마다 애플리케이션을 다시 시작하는 도구
+
+```
+// nodemon 설치
+npm i -D nodemon
+npx nodemon app.ts
+```
