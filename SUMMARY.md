@@ -1,6 +1,7 @@
 # Table of contents
 
 * [YUNA🌕 React](README.md)
+* [SPA](spa.md)
 
 ## React
 
