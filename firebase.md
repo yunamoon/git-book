@@ -11,3 +11,9 @@ Firebase는 Google이 제공하는 모바일 및 웹 앱을 위한 개발 플랫
 * [Firebase 홈페이지 ](https://firebase.google.com/?hl=ko)이동 후 로그인
 * 콘솔에서 새 프로젝트 생성
 * react-study2023
+
+### 3. Firebase 환경 설정
+
+* 프로젝트 상에 앱 추가
+* npm install firebase
+* src 아래에 firebase.js 파일 생성 후 config 복사 붙여넣기&#x20;
