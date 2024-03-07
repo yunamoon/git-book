@@ -1,3 +1,7 @@
+---
+description: https://github.com/yunamoon/react-account-book
+---
+
 # 간략한 화면 기획
 
 ### 1. 무엇을 만들건가요?
