@@ -25,3 +25,25 @@ export class 자식컴포넌트 extends Component {
     }
 }
 ```
+
+### 4. 보통 map()으로 찢어
+
+```jsx
+// list.js 일부 
+// map으로 데이터 찢어서 내려주고
+        {this.props.initialCharges.map( (item, index)=>  {
+          return (      
+          <Item key={index} initialCharges={item}/>
+          )
+    
+        })}
+
+```
+
+```jsx
+// item.js 일부
+// 이렇게 받아먹음
+
+ <span className='expenditure'>{this.props.initialCharges.expenditure}</span>
+ <span className='charge'>{this.props.initialCharges.charge}원</span>
+```
