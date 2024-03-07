@@ -13,6 +13,19 @@
 * 등록된 지출 항목 수정 및 삭제 가능
 * 등록된 지출 총계 제공
 
-### 3. 컴포넌트 구획
+### 3. 화면 기획
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-03-07 오후 11.00.14.png" alt="" width="375"><figcaption><p>나의 소중ㅏㄴ</p></figcaption></figure>
+<div align="left">
+
+<figure><img src="../.gitbook/assets/스크린샷 2024-03-07 오후 11.14.21.png" alt="" width="375"><figcaption></figcaption></figure>
+
+</div>
+
+### 4. 컴포넌트 기획
+
+<div align="left">
+
+<figure><img src="../.gitbook/assets/스크린샷 2024-03-07 오후 11.00.14.png" alt="" width="375"><figcaption></figcaption></figure>
+
+</div>
+
