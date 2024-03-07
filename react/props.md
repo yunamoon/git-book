@@ -31,13 +31,12 @@ export class 자식컴포넌트 extends Component {
 ```jsx
 // list.js 일부 
 // map으로 데이터 찢어서 내려주고
-        {this.props.initialCharges.map( (item, index)=>  {
+  {this.props.initialCharges.map(item=>  {
           return (      
-          <Item key={index} initialCharges={item}/>
+          <Item key={this.props.initialCharges.id} initialCharges={item}/>
           )
     
         })}
-
 ```
 
 ```jsx
