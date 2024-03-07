@@ -1,4 +1,4 @@
-# Props
+# 지출 목록 보여주기
 
 ### 1. 데이터 플로우
 
@@ -31,9 +31,10 @@ export class 자식컴포넌트 extends Component {
 ```jsx
 // list.js 일부 
 // map으로 데이터 찢어서 내려주고
-  {this.props.initialCharges.map(item=>  {
+    {this.props.initialCharges.map(item=>  {
           return (      
-          <Item key={this.props.initialCharges.id} initialCharges={item}/>
+          <Item key={item.id} 
+          initialCharges={item} />
           )
     
         })}

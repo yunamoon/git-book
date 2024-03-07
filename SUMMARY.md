@@ -16,5 +16,6 @@
 * [간략한 화면 기획](react/undefined-3.md)
 * [프로젝트 기본 구조 만들기](react/undefined-4.md)
 * [react-icons](react/react-icons.md)
-* [Props](react/props.md)
-* [JSX Key](react/jsx-key.md)
+* [지출 목록 보여주기](react/undefined-5/README.md)
+  * [JSX Key](react/undefined-5/jsx-key.md)
+* [지출 목록 삭제](react/undefined-6.md)
