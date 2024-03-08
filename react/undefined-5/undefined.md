@@ -28,7 +28,7 @@ const App = () => {
 
 
     const handleDelete = (id) => {
-      const newCharges = this.state.charges.filter(item => item.id !== id);
+      const newCharges = charges.filter(item => item.id !== id);
       setCharges(newCharges)
     }
 
@@ -158,7 +158,7 @@ const Item = ({charges , handleDelete}) => {
           </div>
           <div className='button'>
             <button className='edit-btn'><MdEdit/></button>
-            <button className='delete-btn' onClick={()=> handleDelete(chargesinitialCharges.id)}><MdDelete/></button>
+            <button className='delete-btn' onClick={()=> handleDelete(charges.id)}><MdDelete/></button>
           </div>
         </li>
       </div>
