@@ -26,3 +26,4 @@
   * [구조분해할당 (Destructuring)](react/undefined-5/destructuring.md)
 * [지출 목록 추가](react/undefined-6/README.md)
   * [react 불변성](react/undefined-6/react.md)
+  * [전개 연산자 (Spread Operator)](react/undefined-6/spread-operator.md)
