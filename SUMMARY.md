@@ -18,4 +18,5 @@
 * [react-icons](react/react-icons.md)
 * [지출 목록 보여주기](react/undefined-5/README.md)
   * [JSX Key](react/undefined-5/jsx-key.md)
-* [지출 목록 삭제](react/undefined-6.md)
+* [지출 목록 삭제](react/undefined-6/README.md)
+  * [super(props)](react/undefined-6/super-props.md)
