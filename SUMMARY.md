@@ -29,3 +29,4 @@
   * [전개 연산자 (Spread Operator)](react/undefined-6/spread-operator.md)
 * [총 지출 합계](react/undefined-7.md)
 * [지출 항목 수정](react/undefined-8.md)
+* [목록 전체 삭제](react/undefined-9.md)
