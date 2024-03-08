@@ -24,4 +24,5 @@
 * [함수형 컴포넌트](react/undefined-5/README.md)
   * [함수형 컴포넌트로 변환](react/undefined-5/undefined.md)
   * [구조분해할당 (Destructuring)](react/undefined-5/destructuring.md)
-* [지출 목록 추가](react/undefined-6.md)
+* [지출 목록 추가](react/undefined-6/README.md)
+  * [react 불변성](react/undefined-6/react.md)
