@@ -6,3 +6,4 @@
 * [오늘의 위로 기획](undefined.md)
 * [프로젝트 생성](undefined-1.md)
 * [Chat GPT API](chat-gpt-api-1.md)
+* [Chat GPT API 사용하기](chat-gpt-api-2.md)
