@@ -325,4 +325,37 @@ scope();
 
 ### 13. 객체
 
+> 원시 타입이 아니라 객체 타입의 자료형이며,&#x20;
+>
+> 객체는 여러 개의 값(속성)과 기능(메서드)을 포함할 수 있고, {}안에 키(key)와 값(value)의 쌍으로 구성된다.
+
+```javascript
+let person = {
+    name: 'yuna',
+    age: 29,
+    city: 'ansan',
+    getInfo: function() {
+        return this.name + ' is ' + this.age + ' years old and lives in ' + this.city + '.';
+    }
+};
+
+console.log(person.name);
+console.log(person.age); 
+console.log(person.city); 
+console.log(person.getInfo()) // 메서드
+```
+
 ### 14. 배열
+
+> 원시 타입이 아니라 객체 타입의 자료형이며, 여러값을 순차적으로 담을수 있는 자료형이다.
+>
+> \[]안에 ,로 구분되며 각 원소는 인덱스를 통해 접근이 가능하다.
+
+```javascript
+// 인덱스는 0부터 시작
+let fruits = ['apple', 'banana', 'orange', 'grape'];
+console.log(fruits[0]); 
+console.log(fruits[1]); 
+console.log(fruits[2]); 
+console.log(fruits[3]); 
+```
