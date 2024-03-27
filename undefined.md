@@ -218,14 +218,84 @@ for (let element of arr) {
 }
 ```
 
+***
+
 ### 8. 함수
 
-### 9. 함수 표현식과 화살표 함수
+> 일련의 작업을 수행하는 코드 블록을 말하며,
+>
+> 재사용 가능한 코드 조각을 분리하여 정의하여 코드의 추상화 또는 모듈화에 기여한다.
+>
+> 함수의 선언 방법으로는 함수 표현식, 함수 선언문, 화살표 함수 등이 있다.
 
-### 10. 콜백함수
+#### 1) 함수 선언식
 
-### 11. 스코프
+* 가장 기본적인 함수 선언 방식
+* 함수를 직접 정의하고 해당 함수의 이름으로 호출이 가능하다.
+* 호이스팅의 영향을 받는다.
 
-### 12. 객체
+<pre class="language-javascript"><code class="lang-javascript"><strong>function greet(name) {
+</strong>    return 'Hello, ' + name + '!';
+}
+console.log(greet('yuna'));
+</code></pre>
 
-### 13. 배열
+#### 2) 함수 표현식
+
+* 변수에 함수를 할당하는 함수 선언 방식
+* 변수 선언 이후에 사용이 가능해 호이스팅의 영향을 받지 않는다.&#x20;
+* 함수 이름으로 호출이 불가능하기 때문에 익명함수를 사용해도 상관 없다.
+
+```javascript
+const greet = function(name) {
+    return 'Hello, ' + name + '!';
+}
+console.log(greet('yuna'));
+```
+
+#### 3) 화살표 함수
+
+* ES6(ECMAScript 2015)에서 도입된, 간결한 표현식이다.
+* &#x20;항상 익명 함수로 정의되며, function 키워드 대신 => 을 사용한다.
+* 단일 표현식일 경우 {}도 생략 가능하다.
+
+```javascript
+
+let greet = (name) => 'Hello, ' + name + '!';
+
+let greet = (name) => {
+    return 'Hello, ' + name + '!';
+};
+console.log(greet('yuna')); 
+
+```
+
+### 10. 콜백 함수
+
+> 다른 함수에 인수로 전달되는 함수를 말한다.
+
+```javascript
+function main(call) {
+call();
+};
+
+function call() {
+return '안녕하세요.';
+};
+
+main();
+```
+
+### 11. 호이스팅
+
+{% hint style="danger" %}
+호이스팅(Hoisting)은 자바스크립트에서 변수와 함수 선언이 컨텍스트(전역 또는 함수 내부)의 최상단으로 끌어올려지는 현상을 말한다.
+{% endhint %}
+
+### 12. 스코프
+
+***
+
+### 13. 객체
+
+### 14. 배열
