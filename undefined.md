@@ -112,9 +112,111 @@
 * 논리합(||) - 또는
 * 논리부정(!) - 아니면
 
+***
+
 ### 6. 조건문
 
+> 특정 조건을 만족할 경우에 실행되는 코드를 작성하기 위한 문법이며,
+>
+> 주로 if 문과 switch 문이 사용된다.
+
+#### 1) if 문&#x20;
+
+* 주어진 조건이 참인지 거짓인지 판별하여 코드를 실행한다.
+* if로 시작해서 그냥 끝나던가, else로 끝나야한다.
+
+```javascript
+
+if (condition1) {
+    // 조건1이 참일 때 실행될 코드 블록
+} else if (condition2) {
+    // 조건2가 참일 때 실행될 코드 블록
+} else {
+    // 위의 조건들이 모두 거짓일 때 실행될 코드 블록
+}
+
+```
+
+#### 2) switch 문
+
+* 다수의 조건을 비교해, case에 해당할 경우 코드를 수행한다.
+* break를 걸지 않으면 조건과 상관없이 쭉쭉 나아간다.
+* 또 어느 case에도 해당하지 않을 경우 defalut가 실행된다.
+
+```javascript
+let fruit = 'apple';
+
+switch (fruit) {
+    case 'apple':
+        console.log('사과를 선택했습니다.');
+        break;
+    case 'banana':
+        console.log('바나나를 선택했습니다.');
+        break;
+    case 'orange':
+        console.log('오렌지를 선택했습니다.');
+        break;
+    default:
+        console.log('다른 과일을 선택했습니다.');
+}
+
+```
+
 ### 7. 반복문
+
+> 동일하게 반복되는 코드를 보다 효율적으로 수행 가능하도록 하는 문법,
+>
+> for, while, do while, for of 등의 문법이 사용된다.
+
+#### 1) for 문
+
+* 주어진 횟수 또는 주어진 배열의 컬렉션 만큼 반복할때 사용한다.
+* for (초기식; 조건식; 증감식) 의 형태를 취한다.
+
+```javascript
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+```
+
+#### 2) while 문
+
+* 주어진 조건이 참일 동안 코드를 반복한다.
+* while (조건) {} 의 형태를 취한다.
+
+```javascript
+let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+```
+
+#### 3) do ... while 문
+
+* 코드를 수행하고 조건을 검사하는 것을 반복해, 조건이 참일때만 코드를 반복한다.
+* do {  } while (조건) 의 형태를 취한다.
+
+```javascript
+let i = 1;
+do {
+    console.log(i);
+    i++;
+} while (i <= 5);
+
+```
+
+#### 4) for ... of 문
+
+* 배열이나 이터러블 객체의 각 요소에 대한 반복을 수행할때 사용된다.
+* for (변수 of 배열 또는 이터러블 객체) {  }의 형태를 취한다.
+
+```javascript
+let arr = [1, 2, 3, 4, 5];
+for (let element of arr) {
+    console.log(element);
+}
+```
 
 ### 8. 함수
 
