@@ -2,6 +2,33 @@
 
 ### 1. Truthy와 Falsy
 
+> 조건문 내에서 상황에 따라 논리 값이 아닌 것도 true, false로 평가하는 경우를 말한다.
+
+#### 1) Truthy
+
+* 조건식을 평가할 때 true로 간주되는 값이다.
+* Falsy를 제외한 모든 값이 해당한다.
+
+#### 2) Falsy&#x20;
+
+* 조건식을 평가할 때 flase로 간주되는 값이다.
+* 0&#x20;
+* 빈 문자열 ("")
+* null
+* undefined
+* NaN
+* 0n
+
+```javascript
+function isName(name) {
+if(name) {
+    console.log('이름 있어');
+} else {
+    console.log('이름 없어');
+}
+}
+```
+
 ### 2. 단락평가
 
 ### 3. 구조분해할당
