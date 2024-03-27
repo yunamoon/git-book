@@ -1,39 +1,31 @@
----
-description: '개발 환경 : react(javascript) + vite + styled-component +  antd'
----
+# 자바스크립트 심화
 
-# 프로젝트 생성
+### 1. Truthy와 Falsy
 
-### 1. 프로젝트 생성
+### 2. 단락평가
 
-<pre><code>// 파일 먼저 생성하고 현재 위치에 프로젝트를 생성하는 편.
-<strong>npm create vite@latest ./
-</strong></code></pre>
+### 3. 구조분해할당
 
-### 2. git 연결
+### 4. 스프레드 연산자
 
-```
-git init 
-git remote add origin 'ssh'
-git branch -M main 
-git pull origin main
-git add .
-git commit -m 'create project'
-git push origin main 
-```
+### 5. Rest 매개변수
 
-### 3. npm 패키지 설치
+### 6. 원시 타입과 객체 타입
 
-```
-npm install
-npm run dev // 작동 여부 확인
+### 7. 순회
 
-// 서버 종료 후 이어서
-npm install styled-component antd @ant-design/icons
-```
+### 8. 배열 요소 조작
 
-### 4. 기본 설정
+### 9. 배열 순회와 탐색
 
-* 타이틀 및 파비콘 수정
-* 기본 css 삭제
+### 10. 배열 변형
 
+### 11. Date
+
+### 12. 동기와 비동기
+
+### 13. 비동기 - 콜백함수
+
+### 14. 비동기 - Promise
+
+### 15. 비동기 - Async\&Await
