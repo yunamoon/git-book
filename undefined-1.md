@@ -127,9 +127,42 @@ console.log(rest);
 test(...arr);
 ```
 
-### 6. 원시 타입과 객체 타입
+### 6. 얕은 복사와 깊은 복사
 
->
+> 데이터를 저장하는 두가지 방법이다.
+
+#### 1) 얕은 복사&#x20;
+
+* 복합 데이터 유형의 상위 데이터만 복사하고 하위 수준의 객체나 배열 등은 참조로 복사한다.
+* 하위 객체는 참조를 하기 때문에 원본 객체를 따라 수정이 가능해 위험하다.
+
+```javascript
+let originalArray = [1, 2, {a: 3}];
+let shallowCopyArray = [...originalArray];
+
+originalArray[2].a = 5;
+
+console.log(originalArray); // [1, 2, {a: 5}] 출력
+console.log(shallowCopyArray); // [1, 2, {a: 5}] 출력
+
+```
+
+#### 2) 깊은 복사
+
+* 복합 데이터 유형의 모든 수준을 복사하는 방법이다.
+* 새로운 객체나 배열이 생성되고, 하위 수준의 객체나 배열도 재귀적으로 복사한다.
+* 원본 객체가 수정될 일이 없어 비교적 안전하다.
+
+```javascript
+let originalArray = [1, 2, {a: 3}];
+let deepCopyArray = JSON.parse(JSON.stringify(originalArray));
+
+originalArray[2].a = 5;
+
+console.log(originalArray); // [1, 2, {a: 5}] 출력
+console.log(deepCopyArray); // [1, 2, {a: 3}] 출력
+
+```
 
 ### 7. 순회
 
