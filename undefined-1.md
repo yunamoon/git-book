@@ -86,7 +86,46 @@ const test = ({name, age, team, another}) => {
 
 ### 4. 스프레드 연산자
 
+> 배열이나 객체를 분해하여 개별 요소로 확장하는데 사용되며,
+>
+> ...으로 표시된다.
+
+#### 1) 배열에서 스프레드 연산자
+
+```javascript
+let arr1 = [1,2,3];
+let arr2 = [4, arr1[0],arr1[1],arr1[2],5,6];
+let arr2 = [4, ...arr1,5,6];
+```
+
+#### 2) 객체에서 스프레드 연산자
+
+```javascript
+let object1 = {
+a : 1,
+b : 2
+};
+
+let object2 = {
+...obejct1,
+c : 3,
+d : 4
+};
+```
+
 ### 5. Rest 매개변수
+
+> 함수의 매개변수 중에서 남는 나머지 인수들을 배열로 받을 수 있도록 하는 문법이며,
+>
+> rest 매개변수는 함수 선언부에서 ...을 붙여 사용한다.
+
+```javascript
+let arr = [1,2,3];
+function test(...rest) {
+console.log(rest);
+};
+test(...arr);
+```
 
 ### 6. 원시 타입과 객체 타입
 
