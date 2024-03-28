@@ -164,7 +164,65 @@ console.log(deepCopyArray); // [1, 2, {a: 3}] 출력
 
 ```
 
+***
+
 ### 7. 순회
+
+> 배열이나 객체에 저정된 여러개의 값에 하나씩 접근하는 것을 말한다.
+
+#### 1) 배열 순회
+
+* **for**
+
+```javascript
+let arr = [1,2,3,4,5];
+for (let i = 0; i<arr.length; i++) {
+    console.log(arr[i]);
+};
+```
+
+* **for of (배열에만)**
+
+```javascript
+for(let item of arr) {
+    console.log(item);
+};
+```
+
+#### 2) 객체 순회
+
+* **object.keys**
+
+```javascript
+let person = {
+    name : "문유나",
+    age : 29,
+    team : "무소속"
+};
+
+let keys = Object.keys(person);
+for (let key of keys) {
+    console.log(pesron[key]);
+};
+```
+
+* **object.values**
+
+```javascript
+let values = Object.values(person);
+for (let value of values) {
+    console.log(value);
+};
+```
+
+* **for in (객체에만)**
+
+```javascript
+for (let key in person) {
+const value = person[key]
+console.log(key, value);
+};
+```
 
 ### 8. 배열 요소 조작
 
