@@ -39,9 +39,50 @@ let b = true;
 
 console.log(a && b) // a가 false이기 때문에 b는 확인하지 않고 false 반환
 console.log(b || a) // b가 true이기 때문에 a는 확인하지 않고 true 반환
+
 ```
 
-### 3. 구조분해할당
+```javascript
+// 예제
+function name(person) {
+    const data = person && person.name;
+    console.log(data || "person의 값이 없습니다.");
+}
+```
+
+### 3. 구조 분해 할당
+
+> 배열이나 객체에 들어 있는 데이터를 분해하여 각 변수에 할당하는 것을 말한다.
+
+#### 1) 배열의 구조 분해 할당
+
+```javascript
+let arr = [1,2,3];
+let [one, two, trhee, four =4] = arr;
+console.log(one, two, three, four) // 1, 2, 3, 4 출력
+```
+
+#### 2) 객체의 구조 분해 할당
+
+```javascript
+let person = {
+name : "문유나",
+age : 29,
+team : "무소속"
+};
+
+let { name, age : myAge , team,  another="음?" } = person;
+console.log(name, myAge, team, another) // 문유나, 29, 무소속, 음? 출력
+```
+
+#### 3) 구조 분해 할당의 활용
+
+```javascript
+// 객체 프로퍼티 구조분해 할당
+const test = ({name, age, team, another}) => {
+    console.log(name, myAge, team, another)
+}
+```
 
 ### 4. 스프레드 연산자
 
