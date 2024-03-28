@@ -31,6 +31,16 @@ if(name) {
 
 ### 2. 단락평가
 
+> 논리 연산자를 통해 연산 값을 결정할때, 초반에 답이 결정되면 후위에 접근하지 않는 것을 말한다.
+
+```javascript
+let a = false;
+let b = true;
+
+console.log(a && b) // a가 false이기 때문에 b는 확인하지 않고 false 반환
+console.log(b || a) // b가 true이기 때문에 a는 확인하지 않고 true 반환
+```
+
 ### 3. 구조분해할당
 
 ### 4. 스프레드 연산자
