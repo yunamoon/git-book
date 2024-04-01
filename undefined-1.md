@@ -280,10 +280,4 @@ let date = new Date();
 * **getSeconds - 현재 시간의 초 요소를 반환**
 * **getMilliseconds - 현재 시간의 밀리초 요소를 반환**
 
-### 12. 동기와 비동기
-
-### 13. 비동기 - 콜백함수
-
-### 14. 비동기 - Promise
-
-### 15. 비동기 - Async\&Await
+###
