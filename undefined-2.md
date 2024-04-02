@@ -65,7 +65,31 @@ myPromise.then((result) => {
 }).catch((error) => {
   // 작업이 실패했을 때 실행될 코드
 });
+ 
+```
+
+#### 3)  Promise Chaining
+
+* 메서드를 통해 비동기 작업을 연속적으로 처리하는 것을 말한다.
+
+```jsx
+const firstPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("첫 번째 작업 완료");
+  }, 1000);
+});
+
+firstPromise.then((result) => {
+  console.log(result); // "첫 번째 작업 완료" 출력
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("두 번째 작업 완료");
+    }, 1000);
+  });
+}).then((result) => {
+  console.log(result); // "두 번째 작업 완료" 출력
+});
 
 ```
 
-### &#x20;4. 비동기 - Async\&Await
+### 4. 비동기 - Async\&Await
