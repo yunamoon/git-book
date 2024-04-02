@@ -19,6 +19,21 @@
 
 ### 2. 비동기 - 콜백함수
 
+> 콜백 함수(callback function)는 다른 함수의 인수로 전달되어 특정 이벤트나 조건이 발생했을 때 호출되는 함수를 말한다.
+
+```javascript
+function add(a,b) {
+    setTimeout(()=> {
+    const sum = a+b;
+    callback(sum)
+    }, 3000);
+}
+
+add(1,2,(value)=> {
+    console.log(value);
+});
+```
+
 ### 3. 비동기 - Promise
 
 ### 4. 비동기 - Async\&Await
