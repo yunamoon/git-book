@@ -51,4 +51,21 @@ add(1,2,(value)=> {
 * 성공(Fulfilled) - 비동기 작업이 성공적으로 마무리된 상태를 말한다.
 * 실패(Rejected) - 비동기 작업이 실패한 상태를 말한다.
 
+#### 2) Promise 예제
+
+```jsx
+const myPromise = new Promise((resolve, reject) => {
+  // 비동기 작업 수행
+  // 작업이 성공적으로 완료되면 resolve 호출
+  // 작업이 실패하면 reject 호출
+});
+
+myPromise.then((result) => {
+  // 작업이 성공적으로 완료되었을 때 실행될 코드
+}).catch((error) => {
+  // 작업이 실패했을 때 실행될 코드
+});
+
+```
+
 ### &#x20;4. 비동기 - Async\&Await
