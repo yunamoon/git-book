@@ -93,3 +93,29 @@ firstPromise.then((result) => {
 ```
 
 ### 4. 비동기 - Async\&Await
+
+> async는 특정 함수가 비동기적으로 동작하도록 만들어주는 키워드로, 함수가 프로미스를 반환하게 한다.
+>
+> await는 async 함수 내부에서만 사용이 가능한 키워드며, 비동기 함수의 완료를 기다리게 하는 키워드이다.
+
+```jsx
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("데이터 가져오기 성공");
+    }, 1000);
+  });
+}
+
+async function getData() {
+  try {
+    const result = await fetchData();
+    console.log(result); // "데이터 가져오기 성공" 출력
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+getData();
+
+```
