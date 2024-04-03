@@ -23,6 +23,67 @@
 
 > 라이브러리가 아니라 설치 후 사용 가능한 프로그램으로 별도의 설치 절차가 필요하다.
 
+#### 1) Node.js 설치
+
 * [Node.js 홈페이지 접속](https://nodejs.org/en)
 * LTS(현재 가장 안정적인 버전)과 Current(가장 최신 버전) 중 상황에 맞게 선택하여 다운로드
-*
+* 설치 파일을 통해 다운로드
+* 터미널 오픈 후,  node -v 명령어를 통해 설치된 버전 확인
+
+#### 2) NPM 설치 확인
+
+* 노드 패키지 관리자&#x20;
+* 터미널 오픈 후, npm -v 명령어를 통해 설치 버전 확인
+* 버전이 확인되지 않을 경우 node.js 재설치
+
+***
+
+### 3. Node.js 실행
+
+> Node.js에서는 사용하는 프로그램의 단위를 패키지라고 한다.
+
+* 루트 파일 생성
+* 터미널 오픈 후, npm init 명령어로 npm 설치
+* index.js 파일 생성
+
+```javascript
+// index.js
+console.log('안녕, Node.js!');
+```
+
+* node index.js 입력 후, 출력 결과 확인
+* package.json 수정
+
+````json
+// scripts 추가
+ "start": "node src/index.js"
+```
+````
+
+
+
+***
+
+### 4. Node.js 모듈 시스템
+
+> 프로그램을 기능별로 분리한 조각을 모듈이라고 하고,
+>
+> 모듈을 생성하고, 불러오고, 사용하는 등의 모듈을 다루는 다양한 기능을 제공하는 시스템을 모듈 시스템이라고 한다.
+
+```javascript
+// sum.js
+// export
+function sum(a,b) {
+    return a+b;
+};
+module.exports = {
+    sum,
+}
+```
+
+```javascript
+// index.js
+// import
+const moduleSum = require("./sum");
+console.log(moduleSum.sum(1,2));
+```
