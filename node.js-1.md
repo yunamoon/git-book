@@ -84,6 +84,6 @@ module.exports = {
 ```javascript
 // index.js
 // import
-const moduleSum = require("./sum");
-console.log(moduleSum.sum(1,2));
+const {sum} = require("./sum");
+console.log(sum(1,2));
 ```
