@@ -70,6 +70,8 @@ console.log('안녕, Node.js!');
 >
 > 모듈을 생성하고, 불러오고, 사용하는 등의 모듈을 다루는 다양한 기능을 제공하는 시스템을 모듈 시스템이라고 한다.
 
+#### 1) Common JS 모듈 시스템
+
 ```javascript
 // sum.js
 // export
@@ -86,4 +88,31 @@ module.exports = {
 // import
 const {sum} = require("./sum");
 console.log(sum(1,2));
+```
+
+#### 2) ES 모듈시스템
+
+* package.json 수정, ES 모듈시스템를 사용하겠다고 명시.
+
+```json
+  "type": "module"
+```
+
+```javascript
+// sum.js
+// export
+function sum(a,b) {
+    return a+b;
+};
+
+export {sum};
+
+```
+
+```javascript
+// index.js
+// import
+import {sum} from "./sum.js";
+console.log(sum(1,2));
+
 ```
