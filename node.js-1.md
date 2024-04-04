@@ -116,3 +116,25 @@ import {sum} from "./sum.js";
 console.log(sum(1,2));
 
 ```
+
+***
+
+### 5. Node.js 라이브러리
+
+> 라이브러리는 프로그램 개발시에 필요한 다양한 기능들을 미리 만들어 놓은 모듈을 말한다.
+
+* [npm 사이트 접속](https://www.npmjs.com/)
+* 원하는 라이브러리 선택
+* 실행 방법에 따라 패키지 다운
+* package.json 내에 dependencies 확인
+* import 후 적용
+
+```jsx
+// index.js
+
+import {sum} from "./sum.js";
+import randomColor from "randomcolor";
+
+const color = randomColor();
+console.log(sum(color));
+```
