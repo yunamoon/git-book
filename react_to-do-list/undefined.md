@@ -2,7 +2,7 @@
 
 ### 1. 프로젝트 환경
 
-<table><thead><tr><th width="187">사용 기술</th><th>설명</th></tr></thead><tbody><tr><td>react</td><td></td></tr><tr><td>vite</td><td></td></tr><tr><td>Javascript</td><td></td></tr><tr><td>TailwindCSS</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="187">사용 기술</th><th>설명</th></tr></thead><tbody><tr><td>react</td><td></td></tr><tr><td>vite</td><td></td></tr><tr><td>Javascript</td><td></td></tr></tbody></table>
 
 ### 2. 프로젝트 생성
 
@@ -36,4 +36,4 @@ src >
 
 #### 2) 화면 구조
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-06 오후 3.43.43.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/스크린샷 2024-04-06 오후 3.43.43.png" alt="" width="375"><figcaption></figcaption></figure>
