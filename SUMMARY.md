@@ -7,8 +7,7 @@
 ## 🌕 React.js
 
 * [React.js](react.js/react.js.md)
-* [Vite](react.js/vite.md)
-* [React developer tools](react.js/react-developer-tools.md)
+* [React hooks](react.js/react-hooks.md)
 
 ## 🌕 React\_to do list
 
