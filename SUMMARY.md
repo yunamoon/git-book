@@ -9,6 +9,6 @@
 * [React.js](react.js/react.js.md)
 * [React hooks](react.js/react-hooks.md)
 
-## 🌕 React\_to do list
+## 🌕 React Widget
 
-* [프로젝트 설정](react\_to-do-list/undefined.md)
+* [To do list](react-widget/to-do-list.md)
