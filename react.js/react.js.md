@@ -60,17 +60,53 @@
 * State : 컴포너트의 상태를 저장하고 수정이 가능한 데이터
 * Context : 부모 컴포넌트에서 생성하여 provider 내의 모든 자식 컴포넌트에게 전달 가능한 데이터
 
-### 5. 클래스형 컴포넌트 VS  함수형 컴포넌트
+### 1. 클래스형 컴포넌트
 
-#### 1) 클래스형 컴포넌트
+* React에서 클래스형 컴포넌트는 ES6 클래스로 정의된 React 컴포넌트를 말함
+* 지금은 함수형 컴포넌트가 더 선호됨
+* 그러나 클래스형 컴포넌트는 여전히 많은 프로젝트에서 사용되고 있긴함
+* 근데 내가 그러면 혼나겠지...?
 
-* React.Component를 상속한 클래스
-* 상태(state)와 생명주기 메서드를 사용하여 더 복잡한 동작을 수행할 수 있습니다.
-* 하지만 React 16.8 이후 Hooks의 등장으로 상태 관리나 생명주기 기능을 함수형 컴포넌트에서도 사용할 수 있게 되었습니다.
+### 2. 클래스형 컴포넌트의 구조
 
-#### 2) 함수형 컴포넌트
+* 클래스형 컴포넌트는 React.Component클래스를 확장
+* &#x20;클래스형 컴포넌트는 상태(state)와 생명주기 메서드(lifecycle methods)를 사용하여 컴포넌트의 동작을 제어
 
-###
+```jsx
+import React, { Component } from 'react';
+
+class MyComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      // 초기 상태 설정
+    };
+  }
+
+  componentDidMount() {
+    // 컴포넌트가 마운트된 후에 실행되는 코드
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    // 컴포넌트가 업데이트된 후에 실행되는 코드
+  }
+
+  componentWillUnmount() {
+    // 컴포넌트가 언마운트되기 전에 실행되는 코드
+  }
+
+  render() {
+    return (
+      // 컴포넌트의 UI를 정의하는 JSX
+    );
+  }
+}
+
+export default MyComponent;
+
+```
+
+
 
 ***
 
