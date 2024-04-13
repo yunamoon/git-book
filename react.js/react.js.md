@@ -200,6 +200,46 @@ const handleClick = () => {
 }
 ```
 
+### 10. React 동적 경로
 
+> 사용자의 요청이나 프로그램의 상태에 따라 결정되는 경로를 말한다.
+
+#### 1) URL Parameter&#x20;
+
+* / 뒤에 아이템의 id를 명시하는 방식이다.
+* 아이템의 id 등 변경되지 않는 값을 주소로 명시하기 위하여 사용한다.
+
+```jsx
+// App.jsx
+<Route path='/test/:id' element={<Test/>}/>
+
+//Test.jsx
+import {useParams} from 'react-router-dom';
+
+const Test = () = > {
+const params = useParams();
+
+return(
+    <div>{params.id}</div>
+    );
+}
+```
+
+#### 2) Query String
+
+* ? 뒤에 변수명과 값을 명시하는 방식이다.
+* 검색어 등 자주 변경되는 값을 주소로 명시하기 위해 사용한다.
+
+```jsx
+// 별도 라우터 설정 필요 없음.
+import { useSearchParams } from 'react-router-dom'
+
+const Test = () => {
+const [ params, setParams] = useSearchParams();
+console.log(params.get("string"));
+return();
+}
+
+```
 
 &#x20;
