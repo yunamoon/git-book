@@ -149,7 +149,56 @@ export default MyFunctionalComponent;
 
 ### 9. React Routing
 
+> 리액트는 html 전환 없이 컴포넌트 단위의 리렌더링을 하기 때문에 새로고침이 발생하지 않는다.
 
+#### 1) React Router
+
+* npmjs.com에 등록되어 있는 라이브러리이며, 대다수의 리액트 앱이 이 라이브러리를 사용해 라우터를 구축한다.
+* 다양한 기능들을 제공하며, 자세한 사항은 공식 문서를 참조하면 좋다.
+
+#### 2) React Router 설정
+
+* npm i react-router-dom 명령어를 통해 설치
+* App.jsx 이동 후, \<BrowserRouter/> import해서 사용
+
+```jsx
+// routing 예시
+import { Routes, Route} from 'react-router-dom';
+
+const App= () => {
+
+retrun (
+<Routes>
+<Route path='/' element={<Component/>}/>
+</Routes>
+);
+}
+```
+
+#### 3) 페이지 이동 설정
+
+* Link나 useNavigate 메소드를 사용
+* a 태그 사용시 페이지 새로 고침이 일어나기 때문에 리액트 앱에서는 Link를 권창
+
+```jsx
+// 페이지 이동 예시
+
+import { Routes, Route, Link, useNavigate} from 'react-router-dom';
+const test = () => {
+
+retrun (
+const nav = useNavigate();
+
+const handleClick = () => {
+    nav('/');
+};
+<>
+<Link to={'/'}> HOME </Link>
+<button onclick={handleClick}>이동</button>
+</>
+);
+}
+```
 
 
 
