@@ -266,5 +266,21 @@ return();
 * 이 경우 vite의 이미지 최적화가 이루어진다.
 * vite는 이미지를 데이터 uri로 변환하여, 데이터 캐싱이 이루어지게 한다.&#x20;
 
+#### 3) 중복으로 사용되는 이미지가 많을 경우
+
+* 모듈로 분리한다.
+
+```jsx
+import test from './../assets/img.png';
+export function getImg (name) {
+     switch(name) {
+         case name :  
+         return imgName;
+         default:
+              return null;
+     };
+ };
+```
+
 
 
