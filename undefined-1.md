@@ -280,4 +280,3 @@ let date = new Date();
 * **getSeconds - 현재 시간의 초 요소를 반환**
 * **getMilliseconds - 현재 시간의 밀리초 요소를 반환**
 
-###
