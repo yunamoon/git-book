@@ -22,7 +22,7 @@ add2(add1(), 2, 6);
 
 ```
 
-#### 2) 함수 호출
+#### 2) 함수와 함수 호출
 
 ```javascript
 document.querySelectior('#test').addEventListener('click', 함수);
